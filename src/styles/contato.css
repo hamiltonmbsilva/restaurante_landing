@@ -1,0 +1,119 @@
+.secao-contato {
+  padding: 4rem 1rem;
+  background-color: #fff;
+}
+
+.contato-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--cor-secundaria);
+  margin-bottom: 2rem;
+}
+
+.contato-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Layout para telas maiores */
+@media (min-width: 768px) {
+  .contato-conteudo {
+    flex-direction: row;
+  }
+}
+
+.contato-info-mapa,
+.contato-form-container {
+  flex: 1;
+}
+
+.contato-info {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--cor-fundo);
+}
+
+.contato-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-principal);
+  margin-bottom: 1rem;
+}
+
+.contato-info p {
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.contato-mapa {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form-container {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--cor-fundo);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-principal);
+  margin-bottom: 1.5rem;
+}
+
+.form-grupo {
+  margin-bottom: 1rem;
+}
+
+.form-grupo label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+  margin-bottom: 0.5rem;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+  outline: none;
+  border-color: var(--cor-principal);
+}
+
+.form-botao {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--cor-principal);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-botao:hover {
+  background-color: #ff6347;
+}
