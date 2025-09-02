@@ -1,0 +1,33 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Variáveis CSS para facilitar a manutenção */
+:root {
+  --cor-principal: #FF4500; /* Laranja avermelhado */
+  --cor-secundaria: #333;
+  --cor-texto: #555;
+  --cor-fundo: #f4f4f4;
+  --fonte-principal: 'Poppins', sans-serif;
+}
+
+/* Estilos globais */
+body {
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  background-color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove margem e padding padrão de elementos */
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Link padrão */
+a {
+  text-decoration: none;
+  color: var(--cor-principal);
+}

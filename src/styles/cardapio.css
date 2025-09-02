@@ -1,0 +1,92 @@
+.secao-cardapio {
+  padding: 4rem 1rem;
+  background-color: #fff;
+}
+
+.cardapio-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--cor-secundaria);
+  margin-bottom: 2rem;
+}
+
+.categoria-cardapio {
+  margin-bottom: 3rem;
+}
+
+.categoria-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--cor-principal);
+  border-bottom: 2px solid var(--cor-principal);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.lista-itens {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item-cardapio {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-fundo);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.item-cardapio:hover {
+  transform: translateY(-5px);
+}
+
+.item-imagem-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.item-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.item-cardapio:hover .item-imagem {
+  transform: scale(1.05);
+}
+
+.item-detalhes {
+  padding: 1.5rem;
+}
+
+.item-nome {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+  margin-bottom: 0.5rem;
+}
+
+.item-descricao {
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+  margin-bottom: 1rem;
+}
+
+.item-preco {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cor-principal);
+}
+
+/* Opcional: Layout para telas muito pequenas */
+@media (max-width: 500px) {
+  .lista-itens {
+    grid-template-columns: 1fr;
+  }
+}

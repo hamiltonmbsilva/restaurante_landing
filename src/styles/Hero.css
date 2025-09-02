@@ -1,0 +1,53 @@
+.hero-secao {
+  background-image: url('/imagens/fundo-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.hero-conteudo {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.hero-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitulo {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.hero-botao {
+  background-color: var(--cor-principal);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px; /* Para bordas arredondadas */
+  transition: background-color 0.3s ease;
+}
+
+.hero-botao:hover {
+  background-color: #ff6347; /* Tom de laranja um pouco mais claro */
+}
+
+/* Media query para dispositivos maiores */
+@media (min-width: 768px) {
+  .hero-titulo {
+    font-size: 4rem;
+  }
+  .hero-subtitulo {
+    font-size: 1.25rem;
+  }
+}
