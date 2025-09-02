@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/hero.css'; // Importa o CSS específico para este componente
+import '../styles/Hero.css'; // Importa o CSS específico para este componente
 
 function Hero() {
   return (
