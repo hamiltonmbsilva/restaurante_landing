@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/cardapio.css';
-import ItemCardapio from './itemCardapio';
+import ItemCardapio from './ItemCardapio';
 
 // Dados simulados do cardápio
 const categorias = [
