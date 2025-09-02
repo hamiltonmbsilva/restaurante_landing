@@ -1,0 +1,40 @@
+.botao-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999; /* Garante que o botão fique acima de outros elementos */
+  background-color: #25d366; /* Cor oficial do WhatsApp */
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.botao-whatsapp:hover {
+  transform: scale(1.1); /* Pequeno efeito de zoom ao passar o mouse */
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Para telas menores, ajustamos o tamanho e a posição */
+@media (max-width: 768px) {
+  .botao-whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .whatsapp-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

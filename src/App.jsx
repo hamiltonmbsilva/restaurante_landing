@@ -8,7 +8,7 @@ import Cardapio from './components/Cardapio';
 import Galeria from './components/Galeria';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
-//import BotaoWhatsApp from './components/BotaoWhatsApp';
+import BotaoWhatsApp from './components/BotaoWhatsApp';
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
       <Cardapio /> 
       <Galeria />
       <Contato />
-      <Footer />   
+      <Footer />
+      <BotaoWhatsApp />   
     </>
   );
 }
